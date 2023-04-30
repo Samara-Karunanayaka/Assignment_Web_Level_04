@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<title>SAMARA ACHINI</title>
+
+</head>
+<body>
+  <nav>
+  	<a href="#main">Home</a>|
+  	<a href="#About">About me</a>|
+  	<a href="#Favourites">Favourites</a>|
+  	<a href="#Resume">Resume</a>|
+  	<a href="#Contact">Contact</a>|
+    <div class="animation start-home"></div>
+  </nav>
+  
+<!-- Main section -->
+<section id="main">
+  <div class="main container">
+      <div class="mySlides fade">
+    
+        <div>
+          <h1>Hello,<span></span></h1>
+          <h2>My name is</h2>
+          <h3>SAMARA</h3>
+          <h4>"I work hard, I pay my bills, I maintain myself, I’m independent. And, this is the best feeling in the world."</h3>
+    
+          <a href="#" type="button" class="cta">JOIN</a>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="./img/Travel.jpg" style="width:100%">
+        <div class="text">Interesting to Travel</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2/ 4</div>
+        <img src="./img/music.jpg" style="width:100%">
+        <div class="text">Interesting to music</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="./img/Cook.jpg" style="width:100%">
+        <div class="text">Interesting to Cook</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="./img/Program.jpg" style="width:100%">
+        <div class="text">Interesting to Program </div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+      
+  </div>
+</section>
+<!-- End Main section -->
+
+<!-- About section -->
+<section id="About">
+  <div class="About Container">
+<div class="About-top">
+  <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/about-me-female.png"/></div>
+  <h1 class="section-title">About<span>m</span>e</h1>
+  <p>“A freelance graphic designer specializing in typography, I work primarily with logo design,
+    custom & hand-drawn lettering, and expressive typography. I also love print-related work,
+    especially book cover designing and I started my own business from my home."</p>
+
+    <h2 style="text-align:center">User Profile</h2>
+
+    <div class="card">
+      <img src="./img/Female.jpg" alt="fEMALE" style="width:100%">
+      <h1>SAMARA ACHINI</h1>
+      <p class="title">Graphic Designer</p>
+      <p><i>Samsa Creations</i></p>
+      <p><button>Connect</button></p>
+</div>
+  </div>
+</div>
+</section>
+<!-- End About section -->
+
+<!-- Favourites section -->
+<section id="Favourites">
+  <h1 class="city">Favourites</h1>
+
+<div class="Anuradhapura">
+<div>Anuradhapura, city, north-central Sri Lanka. It is situated along the Aruvi Aru River.
+The old section of Anuradhapura, now preserved as an archaeological park and designated
+a UNESCO World Heritage site in 1982, is the best known of Sri Lanka's ancient ruined cities.
+<img src=./img/Anuradhapura.jpg alt="city" width="300" height="200">
+</div>
+
+<div class="Beach">
+<div>Nilaveli is a coastal resort town and suburb of the Trincomalee District, Sri Lanka located
+16 km northwest of the city of Trincomalee and its many species of vegetation, coral and reef
+fish contributing to Nilaveli's rich biodiversity.
+<img src=./img/Beach.jpg alt="city" width="300" height="200">
+</div>
+</section>
+<!-- End Favourites section -->
+ 
+<!--Resume Section-->
+<section id="Resume">
+<h1>Resume</h1>
+<p>Click on the image to download it:</p>
+  <a href="./img/Resume.jpg" download>
+    <img src="./img/Resume.jpg" width="500" height="700">
+  </a>
+</section>
+<!--End Resume Section-->
+
+<!--Contact Section-->
+<section id="Contact">
+    <h1>Contact</h1>
+      <p>SURVEY FORM</p>
+   <!-- Create Form -->
+   <form method="post" enctype="multipart/form-data"></form>
+    <form id="form">
+  
+      <form method="post" enctype="multipart/form-data">
+        <div>
+            <label class="label-name" for="name">Name:</label>
+            <input type="text" id="nametxt" placeholder="Enter your name" required />
+        </div>
+        <div>
+            <label class="label-name">Gender:</label>
+            <input type="radio" id="female" name="gender" value="female" checked><label for="female" class="abc">Female</label>
+            <input type="radio" id="male" name="gender" value="male"><label for="male" class="abc">Male</label>
+        </div>
+        <div>
+            <label class="label-name">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div>
+            <label for="JobTitle" class="label-name">Job Title</label>
+            <select id="JobTitledd">
+                <option value="Student">Student</option>
+                <option value="Professional">Professional</option>
+            </select>
+        </div>
+        <div>
+            <label for="Languages" class="label-name">Languages:</label>
+            <input type="checkbox" value="Java" name="lang" id="Javachk" checked class="chk" /><label for="Java">Java</label>
+            <input type="checkbox" value="C" name="lang" id="Cchk" class="chk" /><label for="C">C</label>
+            <input type="checkbox" value="C#" name="lang" id="C#chk" class="chk" /><label for="C#">C#</label>
+            <input type="checkbox" value="HTML" name="lang" id="HTMLchk" class="chk" /><label for="HTML">HTML</label>
+        </div>
+        <!--<div>
+            <label class="label-name">Phone No:</label>
+            <input type="number" name="phone_no" required>
+        </div>-->
+        <div>
+            <label for="mail" class="label-name">E-mail:</label>
+            <input type="email" id="mailtxt" required placeholder="abc@mail.com" />
+        </div>
+        <div>
+            <label for="photo" class="label-name">Photo:</label>
+            <input type="file" name="File1" id="File1" accept="image/*" placeholder="Upload your photo" />
+        </div>
+        <div>
+            <label for="msg" class="label-name">Message:</label>
+            <textarea id="msgtxt" placeholder="Add your message"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit" onclick="savedata();">Save</button>
+        </div>
+    </form>
+    <div id="result_grid">
+        <div id="edit_view_panel">
+            <!--<input type="button" value="View" />
+            <input type="button" value="Edit" />-->
+            <button type="submit" value="View"> View </button>
+            <button type="submit" value="Edit"> Edit </button>
+        </div>
+        <div>
+            <table id="form_result">
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Job Title</th>
+                    <th>Languages</th>
+                    <th>Email</th>
+                    <th>Photo</th>
+                    <th>Message</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+
+  <!-- Script for slide show -->
+  <script>
+    var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) { 
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+
+
+// Script for Survey Form (php)
+
+var checkedValue = [];
+var row;
+var data;
+
+function getRadioValue(theRadioGroup) {
+    var elements = document.getElementsByName(theRadioGroup);
+    for (var i = 0, l = elements.length; i < l; i++) {
+        if (elements[i].checked) {
+            return elements[i].value;
+        }
+    }
+}
+
+function getCheckBox(thisCheckBoxGroup) {
+   // var checkedValue = [];
+    var inputElements = document.getElementsByName(thisCheckBoxGroup);
+    for (var i = 0; inputElements[i]; ++i) {
+        if (inputElements[i].checked) {
+             checkedValue.push(inputElements[i].value);              
+        }
+
+    } return checkedValue;
+}
+
+function savedata() {
+
+    var JobTitledd = document.getElementById("JobTitledd");
+     data = {
+        "name": document.getElementById('nametxt').value,
+        "gender": getRadioValue('gender'),
+        "dob": document.getElementById('dob').value,
+        "JobTitle": JobTitledd.options[JobTitledd.selectedIndex].text,
+        "lang": getCheckBox("lang"),
+        "email": document.getElementById('mailtxt').value,
+        "filename" : document.getElementById('File1').value,
+        "message": document.getElementById('msgtxt').value,
+    }
+    console.log(data);      
+    createtablerow();
+
+
+}
+
+function createtablerow() {
+
+    table = document.getElementById('form_result');    
+    var columnCount = table.rows[0].cells.length;
+
+     //Add the data rows.
+        row = table.insertRow(-1);
+
+        var cell1 = row.insertCell(-1);
+        var cell2 = row.insertCell(-1);
+        var cell3 = row.insertCell(-1);
+        var cell4 = row.insertCell(-1);
+        var cell5 = row.insertCell(-1);
+        var cell6 = row.insertCell(-1);
+        var cell7 = row.insertCell(-1);
+        var cell8 = row.insertCell(-1);
+
+        cell1.innerHTML = data.name;;
+        cell2.innerHTML = data.gender
+        cell3.innerHTML = data.dob;
+        cell4.innerHTML = data.JobTitle;
+        cell5.innerHTML = data.lang;
+        cell6.innerHTML = data.email;
+        cell7.innerHTML = data.filename;
+        cell8.innerHTML = data.message;
+         //here i am adding the row
+        table.appendChild(row);
+}
+
+</script>
+
+</section>
+<!--End Contact Section-->
+
+</body>
+</html>
